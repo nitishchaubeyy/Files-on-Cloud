@@ -1,12 +1,13 @@
 # 🗂️ Files-on-Cloud
 
-[![Version](https://img.shields.io/badge/version-1.0.0-blue.svg)]()
+[![Version](https://img.shields.io/badge/version-2.0.1-blue.svg)]()
 [![License](https://img.shields.io/badge/license-MIT-green.svg)]()
 [![Build](https://img.shields.io/badge/build-passing-brightgreen.svg)]()
 
 > A cloud file storage and sharing web application — upload, manage, and share files from any device.
 
 **Live Demo:** https://files-on-cloud.onrender.com
+⚙️(Note: The app may load slowly initially as the backend is hosted on Render free tier.)
 
 ---
 
@@ -16,7 +17,7 @@ Files-on-Cloud is a full-stack web application that allows users to upload, stor
 
 The project is structured as:
 - **Frontend** → `public/` (HTML, CSS, JavaScript)
-- **Backend** → `backend/` (Node.js, Express)
+- **Backend** → `backend/` (Node.js, Express, MongoDB)
 
 ---
 
@@ -27,11 +28,16 @@ The project is structured as:
 - Simple UI with minimal configuration
 - REST APIs for easy integration
 
-### Features
-- 📤 File upload
-- 📁 File listing & management
-- 🔗 File download & sharing
-- 🔒 Authentication (if enabled)
+## 🚀 Features
+
+- 📤 File Upload – Upload files securely to the cloud
+- 🔗 File Sharing – Generate shareable download links
+- 📊 File Analytics – Track downloads, views, and usage statistics
+- 🔐 JWT Authentication – Secure login/signup with token-based auth
+- 🔗 Public Share Links – Access files without login via unique URLs
+- 📷 QR Code Generator – Instantly generate QR codes for file sharing
+- 🔒 File Password – Enable one extra security by adding password
+- 🌐 Responsive UI – Clean and modern interface across devices
 
 ---
 
@@ -90,9 +96,6 @@ npm start
 cd public
 npm start
 ```
-
-Visit: http://localhost:3000
-
 ---
 
 ## 🧪 Usage
@@ -104,6 +107,25 @@ GET /api/files/:fileId
 ```
 
 ---
+## 📁 Project Structure
+
+File-on-Cloud/
+│
+├── backend/
+│ ├── middleware/ # JWT auth, error handling
+│ ├── models/ # Database schemas
+│ ├── routes/ # REST API endpoints
+│ ├── config/ # DB & app configuration (optional)
+│ └── server.js # Express server setup
+│
+├── public/ # Frontend static files
+├── uploads/ # File storage (local)
+│
+├── .env.example # Sample env file (recommended)
+├── .gitignore
+├── LICENSE
+├── package.json
+├── README.md
 
 ## 👩‍💻 Maintainers
 

@@ -86,10 +86,10 @@
         const API_BASE = "";
         const authToken = localStorage.getItem('authToken');
 
-        // Check authentication (Currently bypassed for UI testing)
-        // if (!authToken) {
-        //     window.location.href = 'auth.html?mode=login';
-        // }
+        // Check authentication
+        if (!authToken) {
+            window.location.href = 'auth.html?mode=login';
+        }
 
         const filesTableBody = document.getElementById('filesTableBody');
         const dashboardLoading = document.getElementById('dashboardLoading');

@@ -530,7 +530,7 @@ button:disabled {
         flex-direction: column;
         align-items: center;
     }
-
+}
 
 .message {
     padding: 1rem;
@@ -728,53 +728,28 @@ button:disabled {
 
 /* Auth page card */
 .auth-card {
-    background: rgba(255, 255, 255, 0.04);
-    border: 1px solid rgba(102, 126, 234, 0.2);
-    border-radius: 20px;
-    padding: 2.5rem;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
     animation: slideIn 0.4s ease;
 }
 
-/* Body scroll lock */
-body.modal-open {
-    overflow: hidden;
-    padding-right: 0; /* Prevent layout shift */
-}
-
-/* Upload Result Styles */
-.upload-success {
-    background: rgba(76, 175, 80, 0.1);
-    border: 1px solid rgba(76, 175, 80, 0.3);
-    border-radius: 15px;
-    padding: 1.5rem;
-    margin: 1rem 0;
-    animation: slideIn 0.3s ease;
-}
-
-.upload-success h3 {
-    color: #4caf50;
-    margin-bottom: 1rem;
+/* Signup section visibility improvement */
+.auth-card p {
+    margin-top: 1.2rem;
     text-align: center;
+    color: #e5e7eb;
+    font-size: 1rem;
+    font-weight: 500;
 }
 
-.result-content p {
-    margin: 0.5rem 0;
-    padding: 0.5rem 0;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-}
-
-.result-content p:last-child {
-    border-bottom: none;
-}
-
-.result-content a {
-    color: #667eea;
+.auth-card p a {
+    color: #8ab4ff !important;
+    font-weight: 700;
     text-decoration: none;
-    word-break: break-all;
+    margin-left: 6px;
+    transition: color 0.2s ease;
 }
 
-.result-content a:hover {
+.auth-card p a:hover {
+    color: #c4d7ff !important;
     text-decoration: underline;
 }
 
@@ -1043,3 +1018,4 @@ body.modal-open {
     text-align: right;
     font-weight: 500;
 }
+

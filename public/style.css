@@ -1019,3 +1019,40 @@ button:disabled {
     font-weight: 500;
 }
 
+/*Search and Sort Controls UI */
+.controls-container {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+}
+.search-input {
+    flex: 1;
+    min-width: 200px;
+    padding: 10px 15px;
+    border-radius: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    background: rgba(255, 255, 255, 0.05);
+    color: white;
+    font-size: 0.95rem;
+    transition: border-color 0.3s;
+}
+.search-input:focus {
+    outline: none;
+    border-color: #667eea;
+}
+.sort-select {
+    padding: 10px 15px;
+    border-radius: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    background: #1a202c; 
+    color: white;
+    font-size: 0.95rem;
+    cursor: pointer; 
+    transition: border-color 0.3s;
+}
+.sort-select:focus {
+    outline: none;
+    border-color: #667eea;
+}
+

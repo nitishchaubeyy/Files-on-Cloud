@@ -1021,6 +1021,10 @@ body.light-theme .auth-card p {
     border: 1px solid rgba(255, 255, 255, 0.1);
     font-size: 0.9rem;
 }
+}
+/* =========================================
+   Storage Visualizer Component (Custom)
+   ========================================= */
 /* Storage Visualizer Component (Custom) */
 .storage-container {
     background: rgba(255, 255, 255, 0.03);

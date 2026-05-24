@@ -65,7 +65,9 @@
     </div>
 
     <script>
-        const API_BASE = "";
+        const API_BASE = window.location.hostname === '127.0.0.1' || window.location.hostname === 'localhost' 
+            ? 'http://localhost:5000' 
+            : 'https://your-backend-url.onrender.com'; // TODO: Replace this with your actual deployed backend URL
 
         const urlParams = new URLSearchParams(window.location.search);
         const startMode = urlParams.get('mode') || 'login';
